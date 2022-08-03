@@ -1,0 +1,15 @@
+:root {
+    /* font size */
+    --fs-xs: clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem);
+    --fs-s: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
+    --fs-m: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem);
+    --fs-l: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+    --fs-xl: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+    --fs-xxl: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+    /* font family */
+    --ff-main: 'Roboto', sans-serif;
+    /* font weight */
+    --fw-light: 300;
+    --fw-reg: 400;
+    --fw-bold: 700;
+}

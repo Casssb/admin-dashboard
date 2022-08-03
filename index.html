@@ -1,18 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
     <title>Admin Dashboard</title>
-</head>
-<body>
-    <header></header>
-    <nav></nav>
-    <main></main>
-    
-</body>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-search">
+        <label for="search" class="header-search-icon"
+          ><img src="img/magnifying-glass.svg" alt="search icon"
+        /></label>
+        <input
+          type="text"
+          class="header-search-input"
+          id="search"
+          name="search"
+        />
+      </div>
+      <div class="header-user-profile">
+        <img
+          src="img/bell-ringing.svg"
+          class="header-profile-bell-img"
+          alt="bell icon"
+        />
+        <img src="" alt="" />
+        <p class="header-profile-username">Nicholas Cage</p>
+      </div>
+      <div class="header-welcome">
+        <img src="" alt="" />
+        <div class="welcome-text-container">
+          <p class="welcome-small-text">Hi there,</p>
+          <p class="welcome-large-text">John Travolta (@xenu1337)</p>
+        </div>
+      </div>
+      <div class="header-buttons">
+        <button class="header-button">New</button>
+        <button class="header-button">Upload</button>
+        <button class="header-button">Share</button>
+      </div>
+    </header>
+
+    <nav role="navigation">
+      <div class="nav-title">
+        <img src="img/diamonds-four.svg" alt="icon of 4 diamonds" />
+        <h1 class="nav-title">Dashboard</h1>
+      </div>
+      <ul class="nav-main-icons-container">
+        <li class="nav-icon">
+          <a href="#" class="nav-link"
+            ><img src="img/house.svg" alt="home icon" /></a
+          ><span class="nav-text">Home</span>
+        </li>
+        <li class="nav-icon">
+          <a href="#" class="nav-link"
+            ><img src="img/user-rectangle.svg" alt="home icon" /></a
+          ><span class="nav-text">Profile</span>
+        </li>
+        <li class="nav-icon">
+          <a href="#" class="nav-link"
+            ><img src="img/envelope.svg" alt="home icon" /></a
+          ><span class="nav-text">Messages</span>
+        </li>
+        <li class="nav-icon">
+          <a href="#" class="nav-link"
+            ><img src="img/clock.svg" alt="home icon" /></a
+          ><span class="nav-text">History</span>
+        </li>
+        <li class="nav-icon">
+          <a href="#" class="nav-link"
+            ><img src="img/check-square.svg" alt="home icon" /></a
+          ><span class="nav-text">Tasks</span>
+        </li>
+        <li class="nav-icon">
+          <a href="#" class="nav-link"
+            ><img src="img/users-three.svg" alt="home icon" /></a
+          ><span class="nav-text">Communities</span>
+        </li>
+      </ul>
+      <ul class="nav-secondary-icons-container"></ul>
+      <li class="nav-icon">
+        <a href="#" class="nav-link"
+          ><img src="img/gear.svg" alt="home icon" /></a
+        ><span class="nav-text">Settings</span>
+      </li>
+      <li class="nav-icon">
+        <a href="#" class="nav-link"
+          ><img src="img/info.svg" alt="home icon" /></a
+        ><span class="nav-text">Support</span>
+      </li>
+      <li class="nav-icon">
+        <a href="#" class="nav-link"
+          ><img src="img/lock.svg" alt="home icon" /></a
+        ><span class="nav-text">Privacy</span>
+      </li>
+    </nav>
+
+    <main class="main">
+      <section class="projects">
+        <h3 class="projects-title">Your Projects</h3>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <img src="img/star.svg" alt="star icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/eye.svg" alt="eye icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/share-network.svg" alt="share icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <img src="img/star.svg" alt="star icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/eye.svg" alt="eye icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/share-network.svg" alt="share icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <img src="img/star.svg" alt="star icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/eye.svg" alt="eye icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/share-network.svg" alt="share icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <img src="img/star.svg" alt="star icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/eye.svg" alt="eye icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/share-network.svg" alt="share icon" />
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <img src="img/star.svg" alt="star icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/eye.svg" alt="eye icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/share-network.svg" alt="share icon" />
+            </button>
+          </div>
+        </div>
+        
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <img src="img/star.svg" alt="star icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/eye.svg" alt="eye icon" />
+            </button>
+            <button class="projects-card-button">
+              <img src="img/share-network.svg" alt="share icon" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
