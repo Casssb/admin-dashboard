@@ -13,3 +13,58 @@
     --fw-reg: 400;
     --fw-bold: 700;
 }
+
+body {
+    font-family: var(--ff-main);
+    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-areas: 
+    'nav header'
+    'nav main';
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+nav {
+    grid-area: nav;
+
+}
+
+nav img {
+    height: 40px;
+    width: 40px
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-areas:
+    'projects announcements'
+    'projects trending';
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}
+
+main img {
+    width: 40px;
+    height: 40px;
+
+}
