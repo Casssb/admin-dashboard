@@ -1,70 +1,169 @@
 :root {
-    /* font size */
-    --fs-xs: clamp(0.91rem, calc(0.89rem + 0.10vw), 0.96rem);
-    --fs-s: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.20rem);
-    --fs-m: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.50rem);
-    --fs-l: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
-    --fs-xl: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
-    --fs-xxl: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
-    /* font family */
-    --ff-main: 'Roboto', sans-serif;
-    /* font weight */
-    --fw-light: 300;
-    --fw-reg: 400;
-    --fw-bold: 700;
+  /* Sizing */
+  --s-xs: clamp(0.91rem, calc(0.89rem + 0.1vw), 0.96rem);
+  --s-s: clamp(1.09rem, calc(1.05rem + 0.21vw), 1.2rem);
+  --s-m: clamp(1.31rem, calc(1.24rem + 0.37vw), 1.5rem);
+  --s-l: clamp(1.58rem, calc(1.46rem + 0.59vw), 1.88rem);
+  --s-xl: clamp(1.89rem, calc(1.71rem + 0.89vw), 2.34rem);
+  --s-xxl: clamp(2.27rem, calc(2.01rem + 1.29vw), 2.93rem);
+  /* font family */
+  --ff-main: 'Roboto', sans-serif;
+  /* font weight */
+  --fw-light: 300;
+  --fw-reg: 400;
+  --fw-bold: 700;
+  /* colours */
+  --light-shade: #f1f5f9;
+  --medium-shade: #cbd5e1;
+  --dark-shade: #475569;
+  --bright: #f8fafc;
+  --light-highlight: #a78bfa;
+  --dark-highlight: #6d28d9;
 }
 
+
 body {
-    font-family: var(--ff-main);
-    height: 100%;
-    width: 100vw;
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    grid-template-areas: 
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-areas:
     'nav header'
     'nav main';
 }
 
+/* Header*/
+
 header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 3fr 2fr;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 0.5rem 2rem;
+  background-color: var(--light-shade);
 }
+
 header img {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
+
+.header-search {
+    display: flex;
+    gap: var(--s-m);
+
+}
+
+.header-user-profile {
+    display: flex;
+    gap: var(--s-m);
+}
+
+.header-welcome {
+    display: flex;
+}
+
+.header-buttons {
+    display: flex;
+    gap: var(--s-m)
+}
+
+/* Nav */
 
 nav {
-    grid-area: nav;
+  grid-area: nav;
+  background-color: var(--light-highlight);
+  padding: var(--s-xs);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: var(--s-xs);
+}
 
+.nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-title-text {
+    font-size: var(--s-l);
+    font-weight: var(--fw-bold);
+    color: var(--bright);
+    padding: 0.5rem;
+}
+
+.nav-main-icons-container,
+.nav-secondary-icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem;
+}
+
+.nav-icon:hover, .nav-title:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--dark-shade);
+}
+
+.nav-icon:hover .nav-text, .nav-title:hover .nav-title-text {
+    color: var(--dark-shade);
+}
+
+.nav-icon:hover img, .nav-title:hover img {
+    filter: invert(30%);
+}
+.nav-text {
+    font-size: var(--s-s);
+    font-weight: var(--fw-bold);
+    color: var(--bright);
+    padding: 0.5rem;
 }
 
 nav img {
-    height: 40px;
-    width: 40px
+  height: 25px;
+  width: 25px;
+  filter: invert(100%);
 }
 
+
+/* Main section*/
+
 main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: auto 300px;
-    grid-template-areas:
+  background-color: var(--medium-shade);  
+  grid-area: main;
+  display: grid;
+  grid-template-columns: auto 300px;
+  grid-template-areas:
     'projects announcements'
     'projects trending';
 }
 
+/* Announcement section */
+
 .announcements {
-    grid-area: announcements;
+  grid-area: announcements;
 }
 
+/* Trending section */
+
 .trending {
-    grid-area: trending;
+  grid-area: trending;
 }
 
 main img {
-    width: 40px;
-    height: 40px;
-
+  width: 40px;
+  height: 40px;
 }
