@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="main.js" defer></script>
     <title>Admin Dashboard</title>
   </head>
@@ -20,8 +24,8 @@
     <header>
       <div class="header-search">
         <label for="search" class="header-search-icon"
-          ><img src="img/magnifying-glass.svg" alt="search icon"
-        /></label>
+          ><i class="bx bx-search"></i
+        ></label>
         <input
           type="text"
           class="header-search-input"
@@ -30,11 +34,7 @@
         />
       </div>
       <div class="header-user-profile">
-        <img
-          src="img/bell-ringing.svg"
-          class="header-profile-bell-img"
-          alt="bell icon"
-        />
+        <i class="bx bx-bell"></i>
         <div class="header-profile-img">
           <img
             src="img/faceoff-cage2.jpg"
@@ -44,10 +44,12 @@
         <p class="header-profile-username">Nicholas Cage</p>
       </div>
       <div class="header-welcome">
-        <img
-          src="img/faceoff-cage1.jpg"
-          alt="A very sober looking Nicholas Cage in the film Face-Off"
-        />
+        <div class="header-welcome-img">
+          <img
+            src="img/faceoff-cage1.jpg"
+            alt="A very sober looking Nicholas Cage in the film Face-Off"
+          />
+        </div>
         <div class="welcome-text-container">
           <p class="welcome-small-text">Hi there,</p>
           <p class="welcome-large-text">John Travolta (@xenu1337)</p>
@@ -62,55 +64,46 @@
 
     <nav role="navigation">
       <div class="nav-title">
-        <img src="img/diamonds-four.svg" alt="icon of 4 diamonds" />
+        <i class="bx bxs-dashboard"></i>
         <h1 class="nav-title-text">Dashboard</h1>
       </div>
       <ul class="nav-main-icons-container">
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/house.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bxs-home"></i></a
           ><span class="nav-text">Home</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/user-rectangle.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-user-pin"></i></a
           ><span class="nav-text">Profile</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/envelope.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-envelope"></i></a
           ><span class="nav-text">Messages</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/clock.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-history"></i></a
           ><span class="nav-text">History</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/check-square.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-task"></i></a
           ><span class="nav-text">Tasks</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/users-three.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-globe"></i></a
           ><span class="nav-text">Communities</span>
         </li>
       </ul>
       <ul class="nav-secondary-icons-container">
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/gear.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-cog"></i></a
           ><span class="nav-text">Settings</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/info.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-support"></i></a
           ><span class="nav-text">Support</span>
         </li>
         <li class="nav-icon">
-          <a href="#" class="nav-link"
-            ><img src="img/lock.svg" alt="home icon" /></a
+          <a href="#" class="nav-link"><i class="bx bx-lock"></i></a
           ><span class="nav-text">Privacy</span>
         </li>
       </ul>
@@ -127,31 +120,13 @@
           </div>
           <div class="projects-card-button-container">
             <button class="projects-card-button">
-              <img src="img/star.svg" alt="star icon" />
+              <i class='bx bx-star'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/eye.svg" alt="eye icon" />
+              <i class='bx bx-bullseye'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/share-network.svg" alt="share icon" />
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card">
-          <div class="projects-card-text">
-            <h4 class="projects-card-title"></h4>
-            <p class="projects-card-description"></p>
-          </div>
-          <div class="projects-card-button-container">
-            <button class="projects-card-button">
-              <img src="img/star.svg" alt="star icon" />
-            </button>
-            <button class="projects-card-button">
-              <img src="img/eye.svg" alt="eye icon" />
-            </button>
-            <button class="projects-card-button">
-              <img src="img/share-network.svg" alt="share icon" />
+              <i class='bx bxs-share-alt'></i>
             </button>
           </div>
         </div>
@@ -163,31 +138,13 @@
           </div>
           <div class="projects-card-button-container">
             <button class="projects-card-button">
-              <img src="img/star.svg" alt="star icon" />
+              <i class='bx bx-star'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/eye.svg" alt="eye icon" />
+              <i class='bx bx-bullseye'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/share-network.svg" alt="share icon" />
-            </button>
-          </div>
-        </div>
-
-        <div class="projects-card">
-          <div class="projects-card-text">
-            <h4 class="projects-card-title"></h4>
-            <p class="projects-card-description"></p>
-          </div>
-          <div class="projects-card-button-container">
-            <button class="projects-card-button">
-              <img src="img/star.svg" alt="star icon" />
-            </button>
-            <button class="projects-card-button">
-              <img src="img/eye.svg" alt="eye icon" />
-            </button>
-            <button class="projects-card-button">
-              <img src="img/share-network.svg" alt="share icon" />
+              <i class='bx bxs-share-alt'></i>
             </button>
           </div>
         </div>
@@ -199,13 +156,13 @@
           </div>
           <div class="projects-card-button-container">
             <button class="projects-card-button">
-              <img src="img/star.svg" alt="star icon" />
+              <i class='bx bx-star'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/eye.svg" alt="eye icon" />
+              <i class='bx bx-bullseye'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/share-network.svg" alt="share icon" />
+              <i class='bx bxs-share-alt'></i>
             </button>
           </div>
         </div>
@@ -217,13 +174,49 @@
           </div>
           <div class="projects-card-button-container">
             <button class="projects-card-button">
-              <img src="img/star.svg" alt="star icon" />
+              <i class='bx bx-star'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/eye.svg" alt="eye icon" />
+              <i class='bx bx-bullseye'></i>
             </button>
             <button class="projects-card-button">
-              <img src="img/share-network.svg" alt="share icon" />
+              <i class='bx bxs-share-alt'></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <i class='bx bx-star'></i>
+            </button>
+            <button class="projects-card-button">
+              <i class='bx bx-bullseye'></i>
+            </button>
+            <button class="projects-card-button">
+              <i class='bx bxs-share-alt'></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-card">
+          <div class="projects-card-text">
+            <h4 class="projects-card-title"></h4>
+            <p class="projects-card-description"></p>
+          </div>
+          <div class="projects-card-button-container">
+            <button class="projects-card-button">
+              <i class='bx bx-star'></i>
+            </button>
+            <button class="projects-card-button">
+              <i class='bx bx-bullseye'></i>
+            </button>
+            <button class="projects-card-button">
+              <i class='bx bxs-share-alt'></i>
             </button>
           </div>
         </div>
