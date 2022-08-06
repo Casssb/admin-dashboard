@@ -2,6 +2,7 @@ const menuToggle = document.querySelector('#nav-hamburger');
 const menuTitleText = document.querySelector('.nav-title-text');
 const menuIconText = document.querySelectorAll('.nav-text');
 const darkmodeToggle = document.querySelector('.darkmode-switch');
+const darkmodeIcon = document.querySelector('#darkmodeIcon');
 const body = document.querySelector('body')
 
 function changeMenu() {
@@ -28,7 +29,18 @@ function changeMenu() {
 
 function changeTheme() {
   body.classList.toggle('dark')
+  if(body.classList.contains('dark')) {
+    darkmodeIcon.classList.add('bx-moon');
+    darkmodeIcon.classList.remove('bx-sun')
+  } else {
+    darkmodeIcon.classList.add('bx-sun')
+    darkmodeIcon.classList.remove('bx-moon')
+  }
 }
 
 menuToggle.addEventListener('click', changeMenu);
 darkmodeToggle.addEventListener('click', changeTheme);
+
+
+/*               <i class='bx bx-moon nav-moon'></i>
+              <i class='bx bx-sun nav-sun'></i> */
