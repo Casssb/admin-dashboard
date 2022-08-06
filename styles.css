@@ -315,6 +315,11 @@ main {
   position: relative;
 }
 
+.projects-card:hover {
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
 .projects-card-text {
   color: var(--text-bold);
 }
