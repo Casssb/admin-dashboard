@@ -16,4 +16,4 @@ This project really helped me in getting used to grid and flex. I think I ended 
 
 ## Credits
 * Icons taken from [Boxicons](https://boxicons.com/)
-* Design template from [The Odin Project](https://cdn.statically.io/gh/TheOdinProject/curriculum/main/html_css/grid-lessons/project-dashboard/dashboard-project.png/)
+* Design template from [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard/)
