@@ -36,6 +36,18 @@ body {
     'nav main';
 }
 
+body.dark {
+  --light-shade: #f1f5f9;
+  --medium-shade: #cbd5e1;
+  --dark-shade: #475569;
+  --bright: #f8fafc;
+  --light-highlight: #6d28d9;
+  --dark-highlight: #4c1d95;
+  --shadow-full: 0 0 5px var(--dark-shade);
+  --shadow-bottom: 2px 1px 3px var(--dark-shade);
+
+}
+
 h3 {
   font-size: var(--s-m);
 }
@@ -238,6 +250,12 @@ nav {
 nav i {
   font-size: var(--s-m);
   color: var(--bright);
+}
+
+.darkmode-switch {
+  background-color: var(--light-highlight);
+  outline: none;
+  border: none;
 }
 
 /* Main section*/
