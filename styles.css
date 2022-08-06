@@ -15,7 +15,7 @@
   /* colours */
   --light-shade: #e4e4e7;
   --medium-shade: #9ca3af;
-  --dark-shade: #475569;
+  --dark-shade: #78797a;
   --bright: #e4e5e6;
   --light-highlight: #6d28d9;
   --dark-highlight: #6d28d9;
@@ -54,6 +54,7 @@ body.dark {
 h3 {
   font-size: var(--s-m);
   color: var(--text-bold);
+  font-weight: var(--fw-reg)
 }
 
 /* Header*/
@@ -86,6 +87,7 @@ header {
   width: 60%;
   outline: 0;
   background-color: var(--medium-shade);
+  color: var(--text-bold);
 }
 
 .header-user-profile {
@@ -310,25 +312,35 @@ main {
   border-radius: 0.5em;
   padding: 0.5rem;
   border-left: 0.4rem solid var(--light-highlight);
+  position: relative;
 }
 
 .projects-card-text {
+  color: var(--text-bold);
 }
 
 .projects-card-title {
+  font-weight: var(--fw-bold);
+  font-size: var(--s-s);
 }
 
 .projects-card-description {
+  font-size: var(--s-xs);
 }
 
 .projects-card-button-container {
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .projects-card-button {
+  text-decoration: none;
+  border: none;
+  background-color: var(--light-shade);
 }
 
 .projects-card-button i {
+  color: var(--text-bold);
 }
 
 /* Announcement section */
@@ -336,9 +348,6 @@ main {
 .announcements {
   grid-area: announcements;
   padding: 1rem;
-}
-
-.announcements-title {
 }
 
 .announcements-container {
@@ -349,12 +358,9 @@ main {
   margin-top: 2.5rem;
 }
 
-.announcements-element {
-}
-
 .announcements-element:nth-child(2),
 .announcements-element-one {
-  border-bottom: 1px solid var(--dark-shade);
+  border-bottom: 1px solid var(--text-bold);
 }
 
 .announcements-bold-text {
@@ -373,9 +379,6 @@ main {
 .trending {
   grid-area: trending;
   padding: 1rem;
-}
-
-.trending-title {
 }
 
 .trending-container {
@@ -472,6 +475,6 @@ main {
   }
   .projects {
     grid-template-columns:1fr;
-    width: 80vw;
+    width: 75vw;
   }
 }
